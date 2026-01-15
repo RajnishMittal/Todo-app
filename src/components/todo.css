@@ -1,0 +1,302 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.todo-page {
+    box-sizing: border-box;
+}
+
+
+.outer {
+    background-color: #5800FF;
+    padding: 20px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.tasks {
+    background-color: #000000;
+    color: white;
+    min-height: 100vh;
+
+    border-radius: 30px;
+}
+
+.hero{
+    display: flex;
+}
+.progress {
+    background: linear-gradient(180deg, #bf9cff, #7f7cff);
+    min-height: 100vh;
+    border-radius: 30px;
+    width: 20vw;
+    margin: 20px;
+    padding: 10vh;
+    text-align: center;
+    /* padding: 30px 15px; */
+    box-shadow: 0 0 25px rgba(127, 124, 255, 0.6);
+}
+h1,h2{
+    margin: 20px;
+}
+.progress h1,
+.progress h2 {
+    color: black;
+}   
+
+.progress_num {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.task_list {
+    color: white;
+    min-height: 60vh;
+    width: 100%;
+}
+
+
+.input_tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1; 
+    width: 100%; 
+    margin: 50px;
+}
+.enter {
+    position: sticky;
+    top: 40px;
+    z-index: 3;
+}
+
+.label_task {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    width: 60vw;
+    padding: 25px;
+    margin: 20px;
+    font-size: xx-large;
+    background-color: #bf9cff;
+    border-radius: 30px;
+    background: rgb(#ffffff / 100%);
+    border: 10px solid rgb(127, 124, 255);
+    gap: 15px;
+}
+.task_text {
+    flex: 1; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+.check_box {
+    width: 25px;
+    height: 25px;
+    accent-color: #9b75c7;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.check_box:hover{
+    box-shadow: none;
+  background: none;
+}
+
+
+.enter_task{
+    width: 30vw;
+    padding: 20px;
+    font-size: large;
+    margin-right: 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 30px rgb(243, 211, 255);
+    animation: slideIn 2s ease-in-out 0.5s infinite alternate forwards;
+}
+.enter_task:hover{
+    transform: scale(1.1);
+}
+@keyframes slideIn {
+  0% {
+    box-shadow: 0 0 30px #bf9cff;
+  }
+  50% {
+    box-shadow: 0 0 30px rgb(127, 124, 255);
+  }
+  100% {
+    box-shadow: 0 0 30px #bf9cff;
+  }
+  100% {
+    box-shadow: 0 0 20px rgb(243, 211, 255);
+  }
+}
+.delete_btn {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    cursor: pointer;
+    filter: invert(1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.delete_btn:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .progress {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .progress_num {
+        font-size: 2.5rem;
+    }
+
+    .label_task {
+        width: 80vw;
+        padding: 20px;
+        font-size: x-large;
+    }
+
+    .enter_task {
+        width: 50vw;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .outer {
+        padding: 10px;
+    }
+
+    .tasks {
+        border-radius: 20px;
+    }
+
+    .progress {
+        border-radius: 20px;
+        padding: 15px;
+        margin: 10px 5px;
+    }
+
+    .progress h1 {
+        font-size: 1.5rem;
+    }
+
+    .progress h2 {
+        font-size: 1.2rem;
+    }
+
+    .progress_num {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .enter {
+        top: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .enter_task {
+        width: 70vw;
+        margin-right: 0;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: medium;
+    }
+
+    .enter button {
+        width: 70vw;
+        padding: 15px;
+        font-size: medium;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .label_task {
+        width: 85vw;
+        padding: 15px;
+        margin: 15px 0;
+        font-size: large;
+        border-radius: 20px;
+        border: 5px solid rgb(127, 124, 255);
+    }
+
+    .check_box {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .delete_btn {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+    }
+
+    .task_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress h1 {
+        font-size: 1.3rem;
+    }
+
+    .progress h2 {
+        font-size: 1rem;
+    }
+
+    .progress_num {
+        font-size: 1.8rem;
+    }
+
+    .enter_task {
+        width: 80vw;
+        padding: 12px;
+    }
+
+    .enter button {
+        width: 80vw;
+        padding: 12px;
+    }
+
+    .label_task {
+        width: 90vw;
+        padding: 12px;
+        font-size: medium;
+        gap: 10px;
+    }
+
+    .check_box {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .delete_btn {
+        width: 24px;
+        height: 24px;
+    }
+}
