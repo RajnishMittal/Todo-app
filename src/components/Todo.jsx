@@ -94,6 +94,7 @@ const Todo = () => {
           onSubmit={e => {
             e.preventDefault()
             list_todo(new FormData(e.target))
+            e.target.reset()
           }}
         >
           <div className="hero">

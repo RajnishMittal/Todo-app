@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -19,13 +19,13 @@
     background-color: #000000;
     color: white;
     min-height: 100vh;
-
     border-radius: 30px;
 }
 
-.hero{
+.hero {
     display: flex;
 }
+
 .progress {
     background: linear-gradient(180deg, #bf9cff, #7f7cff);
     min-height: 100vh;
@@ -34,16 +34,18 @@
     margin: 20px;
     padding: 10vh;
     text-align: center;
-    /* padding: 30px 15px; */
     box-shadow: 0 0 25px rgba(127, 124, 255, 0.6);
 }
-h1,h2{
+
+h1,
+h2 {
     margin: 20px;
 }
+
 .progress h1,
 .progress h2 {
     color: black;
-}   
+}
 
 .progress_num {
     font-size: 3rem;
@@ -65,10 +67,11 @@ h1,h2{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    flex: 1; 
-    width: 100%; 
+    flex: 1;
+    width: 100%;
     margin: 50px;
 }
+
 .enter {
     position: sticky;
     top: 40px;
@@ -89,8 +92,9 @@ h1,h2{
     border: 10px solid rgb(127, 124, 255);
     gap: 15px;
 }
+
 .task_text {
-    flex: 1; 
+    flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -105,13 +109,14 @@ h1,h2{
     cursor: pointer;
     margin-right: 30px;
 }
-.check_box:hover{
+
+.check_box:hover {
     box-shadow: none;
-  background: none;
+    background: none;
 }
 
 
-.enter_task{
+.enter_task {
     width: 30vw;
     padding: 20px;
     font-size: large;
@@ -121,23 +126,29 @@ h1,h2{
     box-shadow: 0px 0px 30px rgb(243, 211, 255);
     animation: slideIn 2s ease-in-out 0.5s infinite alternate forwards;
 }
-.enter_task:hover{
+
+.enter_task:hover {
     transform: scale(1.1);
 }
+
 @keyframes slideIn {
-  0% {
-    box-shadow: 0 0 30px #bf9cff;
-  }
-  50% {
-    box-shadow: 0 0 30px rgb(127, 124, 255);
-  }
-  100% {
-    box-shadow: 0 0 30px #bf9cff;
-  }
-  100% {
-    box-shadow: 0 0 20px rgb(243, 211, 255);
-  }
+    0% {
+        box-shadow: 0 0 30px #bf9cff;
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgb(127, 124, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 30px #bf9cff;
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgb(243, 211, 255);
+    }
 }
+
 .delete_btn {
     width: 35px;
     height: 35px;
@@ -146,6 +157,7 @@ h1,h2{
     filter: invert(1);
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
 .delete_btn:hover {
     transform: scale(1.15);
     opacity: 0.8;
@@ -181,6 +193,12 @@ h1,h2{
 }
 
 @media (max-width: 768px) {
+
+    *{
+        max-width: 100%;
+    }
+
+
     .outer {
         padding: 10px;
     }
@@ -190,9 +208,10 @@ h1,h2{
     }
 
     .progress {
-        border-radius: 20px;
-        padding: 15px;
-        margin: 10px 5px;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 20px;
     }
 
     .progress h1 {
@@ -204,23 +223,29 @@ h1,h2{
     }
 
     .progress_num {
-        font-size: 2rem;
-        margin-top: 10px;
+        font-size: 3rem;
+        margin-top: 15px;
     }
+
+    .input_tasks {
+        width: 100%;
+        margin: 30px 0;
+    }
+
 
     .enter {
         top: 20px;
         flex-direction: column;
+        text-align: center;
         width: 100%;
     }
 
     .enter_task {
-        width: 70vw;
+        width: 100%;
+        max-width: 100%;
         margin-right: 0;
-        margin-bottom: 15px;
-        padding: 15px;
-        font-size: medium;
     }
+
 
     .enter button {
         width: 70vw;
@@ -231,7 +256,7 @@ h1,h2{
     }
 
     .label_task {
-        width: 85vw;
+        width: 70vw;
         padding: 15px;
         margin: 15px 0;
         font-size: large;

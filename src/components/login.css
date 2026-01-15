@@ -84,3 +84,45 @@ button:hover{
     background-color: #FFC600;
     color: black;
 }
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .login_box {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 25px;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  label {
+    font-size: 16px;
+    align-self: flex-start;
+  }
+
+  input[type="email"],
+  input[type="name"],
+  input[type="password"] {
+    min-width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  input:hover {
+    transform: none; 
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+}
