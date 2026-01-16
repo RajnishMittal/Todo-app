@@ -63,19 +63,22 @@ h2 {
 
 .input_tasks {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     flex-direction: column;
     flex: 1;
     width: 100%;
+    min-height: 100vh;
     margin: 50px;
+    padding-top: 50px; 
 }
 
 .enter {
     position: sticky;
-    top: 40px;
+    top: 20px;
     z-index: 3;
+    margin-bottom: 30px;
 }
 
 .label_task {
