@@ -2,16 +2,17 @@ nav{
     background-color: black;
     /* min-height: 100vh; */
     color: white;
-    height: 20vh;
-    position: sticky;
+    height: 18vh;
+    position: fixed;
     z-index: 10;
     top: 0;
     border-bottom: 10px solid white;
+    width: 100vw;
 }
 
 .container2{
     margin: 0;
-    padding: 50px 70px;
+    padding: 40px 60px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -83,7 +84,7 @@ img{
 @media (max-width: 1024px) {
     nav {
         height: auto;
-        min-height: 15vh;
+        min-height: 20vh;
     }
 
     .container2 {
@@ -184,8 +185,17 @@ img{
         border: 2px solid white;
     }
 }
+@media (max-width: 480px) {
+    nav{
+        max-height: 21vh;
+    }
+}
 
 @media (max-width: 360px) {
+    nav{
+        min-height: 10vh;
+    }
+    
     .app_name h1 {
         font-size: 1rem;
     }

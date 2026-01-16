@@ -13,6 +13,7 @@
     padding: 20px;
     align-items: center;
     margin-top: 5px;
+    margin-top: 19vh;
 }
 
 .tasks {
@@ -167,6 +168,11 @@ h2 {
 }
 
 @media (max-width: 1024px) {
+
+    .outer{
+        margin-top: 21vh;
+    }
+
     .hero {
         flex-direction: column;
     }
@@ -288,6 +294,11 @@ h2 {
 }
 
 @media (max-width: 480px) {
+
+    .outer{
+        margin-top: 20vh;
+    }
+
     .progress h1 {
         font-size: 1.3rem;
     }
@@ -326,5 +337,16 @@ h2 {
     .delete_btn {
         width: 24px;
         height: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .outer{
+        margin-top: 28vh;
+    }
+}
+
+@media (max-width: 360px){
+    .outer{
+        margin-top: 30vh;
     }
 }
